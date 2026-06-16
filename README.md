@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="1588" height="1588" alt="8265c08f-4abd-43f0-aeea-292b3dff568d" src="https://github.com/user-attachments/assets/4e293275-dd58-4fd0-85cf-51ba0d527826" />
+  <img width="158" height="158" alt="8265c08f-4abd-43f0-aeea-292b3dff568d" src="https://github.com/user-attachments/assets/4e293275-dd58-4fd0-85cf-51ba0d527826" />
   <h1> WC2026 智能辅助决策引擎</h1>
   <p><i>基于大模型与海量足球数据的赛事深度分析与推演系统</i></p>
 </div>
