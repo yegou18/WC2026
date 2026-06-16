@@ -52,3 +52,5 @@ Thumbs.db
 backend/.env
 frontend/.env.local
 frontend/.env.*.local
+chrome_cloned_profile/
+*.json.bak

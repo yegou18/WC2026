@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import psycopg2
@@ -24,7 +24,7 @@ app.add_middleware(
 # 数据库连接函数
 def get_db_connection():
     # 使用环境变量获取敏感信息，若未配置则使用默认值或抛错
-    db_password = os.getenv("DB_PASSWORD", "002505@Zx")
+    db_password = os.getenv("DB_PASSWORD", "postgres")
     return psycopg2.connect(user="postgres", password=db_password, host="127.0.0.1", port=5432, database="postgres")
 
 @app.get("/")
@@ -201,7 +201,7 @@ class LLMPredictionRequest(BaseModel):
     force_refresh: bool = False
 
 client = OpenAI(
-    api_key=os.getenv("ALIYUN_API_KEY", "your_default_key_here"),
+    api_key=os.getenv("QWEN_API_KEY", "YOUR_API_KEY_HERE"),
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
@@ -214,7 +214,7 @@ def get_match_context(team1_name, team2_name):
     t1 = cur.fetchone()
     t1_players = []
     if t1:
-        cur.execute("SELECT name, position, age, club, is_starter, description, overall_rating, stats FROM players_detailed WHERE team_id = %s ORDER BY overall_rating DESC NULLS LAST", (t1['id'],))
+        cur.execute("SELECT name, position, age, height, weight, preferred_foot, club, is_starter, description, overall_rating, stats FROM players_detailed WHERE team_id = %s ORDER BY overall_rating DESC NULLS LAST", (t1['id'],))
         t1_players = cur.fetchall()
 
     # 提取客队数据
@@ -222,7 +222,7 @@ def get_match_context(team1_name, team2_name):
     t2 = cur.fetchone()
     t2_players = []
     if t2:
-        cur.execute("SELECT name, position, age, club, is_starter, description, overall_rating, stats FROM players_detailed WHERE team_id = %s ORDER BY overall_rating DESC NULLS LAST", (t2['id'],))
+        cur.execute("SELECT name, position, age, height, weight, preferred_foot, club, is_starter, description, overall_rating, stats FROM players_detailed WHERE team_id = %s ORDER BY overall_rating DESC NULLS LAST", (t2['id'],))
         t2_players = cur.fetchall()
         
     cur.close()
@@ -240,7 +240,16 @@ def get_match_context(team1_name, team2_name):
             stats_str = ""
             if p.get('stats'):
                 stats_str = " | ".join([f"{k}:{v}" for k, v in p['stats'].items()])
-            p_text += f"- {p['name']} ({p['position']}, 评分: {p.get('overall_rating')}) : {stats_str}\n"
+            
+            # 添加更详细的身体数据
+            body_info = []
+            if p.get('age'): body_info.append(f"{p['age']}岁")
+            if p.get('height'): body_info.append(f"{p['height']}cm")
+            if p.get('weight'): body_info.append(f"{p['weight']}kg")
+            if p.get('preferred_foot'): body_info.append(f"惯用脚:{p['preferred_foot']}")
+            body_str = " ".join(body_info)
+            
+            p_text += f"- {p['name']} ({p['position']}, 评分: {p.get('overall_rating')}) [{body_str}] : {stats_str}\n"
         p_text += "\n"
         return p_text
         
@@ -308,10 +317,126 @@ def predict_red_cards(req: LLMPredictionRequest):
 def predict_penalties(req: LLMPredictionRequest):
     return check_or_upsert_prediction(req, "penalties", "请预测本场比赛出现点球或进入点球大战的概率。要求：用简短的一两句话直接描述，不要废话。", 100)
 
+@app.post("/api/predict/tactical")
+def predict_tactical(req: LLMPredictionRequest):
+    return check_or_upsert_prediction(req, "tactical_restraint", "请深度分析双方主教练的阵型（如4-3-3对阵3-5-2）以及战术风格是否存在相互克制。要求：用简明扼要的1-2句话输出分析结果，切中要害，不废话。", 150)
+
+@app.post("/api/predict/key_player")
+def predict_key_player(req: LLMPredictionRequest):
+    return check_or_upsert_prediction(req, "key_player_duel", "请基于双方评分最高的核心球员（前锋vs后卫，或中场核心对决），分析他们在比赛中的对位优劣势。要求：用1-2句话犀利点评，不要废话。", 150)
+
+@app.post("/api/predict/injury")
+def predict_injury(req: LLMPredictionRequest):
+    return check_or_upsert_prediction(req, "injury_impact", "请结合双方平均年龄、近期伤病史和转会情况，分析本场比赛的体能消耗点或隐患。要求：用1句话直接指出体能或伤病影响最大的点。", 100)
+
+@app.post("/api/predict/possession")
+def predict_possession(req: LLMPredictionRequest):
+    return check_or_upsert_prediction(req, "possession_pace", "请预测本场比赛的控球率比例（如55% vs 45%）和比赛节奏（快节奏对攻/沉闷防守）。要求：用极其简短的一句话描述预测控球率和节奏。", 50)
+
 @app.post("/api/predict/advice")
 def predict_advice(req: LLMPredictionRequest):
-    return check_or_upsert_prediction(req, "advice", "请给出详细的专家投注建议（结合基本面、六维能力雷达图、让球盘等，字数500字左右）。直接输出文本，不要包含任何前缀或Markdown代码块格式。", 1500)
+    prompt_addition = """
+请作为顶尖足彩精算师，给出极其明确、量化的投注方案。
+你必须严格输出一个 JSON 格式的字符串，绝对不要包含任何 markdown 代码块（如 ```json），直接输出 JSON 对象本身。
+JSON 结构必须严格如下（数值需根据你的推演合理生成）：
+{
+  "win_rates": {"team1": 55, "draw": 30, "team2": 15},
+  "radar_compare": {
+    "attack": [85, 70],
+    "defense": [80, 65],
+    "control": [75, 75],
+    "experience": [90, 80],
+    "form": [80, 85]
+  },
+  "betting_plan": [
+    {
+      "play_style": "胜平负或让球",
+      "pick": "主胜 / 让胜",
+      "confidence": 85,
+      "amount_advice": "重仓 (3成)",
+      "score": "2-0 或 3-1",
+      "reason": "简短的一句话理由"
+    },
+    {
+      "play_style": "大小球",
+      "pick": "大 2.5",
+      "confidence": 70,
+      "amount_advice": "中仓 (1.5成)",
+      "score": "-",
+      "reason": "简短的一句话理由"
+    }
+  ],
+  "summary": "一句简明扼要的总结点评"
+}
+"""
+    return check_or_upsert_prediction(req, "advice", prompt_addition, 1500)
 
+
+# --- Login and Player APIs ---
+class LoginRequest(BaseModel):
+    username: str
+    password: str
+
+@app.post("/api/login")
+def login(req: LoginRequest):
+    try:
+        conn = get_db_connection()
+        cur = conn.cursor(cursor_factory=RealDictCursor)
+        cur.execute("SELECT id, username, role, balance FROM users WHERE username = %s AND password = %s", (req.username, req.password))
+        user = cur.fetchone()
+        cur.close()
+        conn.close()
+        
+        if user:
+            # 简化起见，直接返回 userId 作为 token
+            return {"status": "success", "token": str(user["id"]), "user": user}
+        else:
+            return {"status": "error", "message": "用户名或密码错误"}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
+@app.get("/api/user/me")
+def get_user_me(authorization: str = Header(None)):
+    if not authorization:
+        raise HTTPException(status_code=401, detail="未登录")
+    try:
+        user_id = int(authorization)
+        conn = get_db_connection()
+        cur = conn.cursor(cursor_factory=RealDictCursor)
+        
+        # 获取用户基本信息
+        cur.execute("SELECT id, username, role, balance FROM users WHERE id = %s", (user_id,))
+        user = cur.fetchone()
+        
+        if not user:
+            raise HTTPException(status_code=404, detail="用户不存在")
+            
+        # 获取投注记录
+        cur.execute("SELECT id, bet_type, description, amount, status, profit, created_at FROM bets WHERE user_id = %s ORDER BY created_at DESC", (user_id,))
+        bets = cur.fetchall()
+        
+        cur.close()
+        conn.close()
+        
+        # 计算统计数据
+        total_profit = sum(bet["profit"] for bet in bets if bet["status"] == "won")
+        total_bet = sum(bet["amount"] for bet in bets)
+        
+        return {
+            "status": "success", 
+            "data": {
+                "user": user,
+                "bets": bets,
+                "stats": {
+                    "total_profit": total_profit,
+                    "total_bet": total_bet,
+                    "win_rate": len([b for b in bets if b["status"] == "won"]) / len(bets) if bets else 0
+                }
+            }
+        }
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+        
 if __name__ == "__main__":
     import uvicorn
     # 使用五位数端口 10086

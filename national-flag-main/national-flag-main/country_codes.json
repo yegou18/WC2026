@@ -1,0 +1,1745 @@
+[
+  {
+    "english_name": "Afghanistan",
+    "chinese_name": "阿富汗",
+    "alpha_2_code": "AF",
+    "alpha_3_code": "AFG",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg"
+  },
+  {
+    "english_name": "Åland Islands",
+    "chinese_name": "奥兰群岛",
+    "alpha_2_code": "AX",
+    "alpha_3_code": "ALA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg"
+  },
+  {
+    "english_name": "Albania",
+    "chinese_name": "阿尔巴尼亚",
+    "alpha_2_code": "AL",
+    "alpha_3_code": "ALB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"
+  },
+  {
+    "english_name": "Algeria",
+    "chinese_name": "阿尔及利亚",
+    "alpha_2_code": "DZ",
+    "alpha_3_code": "DZA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg"
+  },
+  {
+    "english_name": "American Samoa",
+    "chinese_name": "美属萨摩亚",
+    "alpha_2_code": "AS",
+    "alpha_3_code": "ASM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_American_Samoa.svg"
+  },
+  {
+    "english_name": "Andorra",
+    "chinese_name": "安道尔",
+    "alpha_2_code": "AD",
+    "alpha_3_code": "AND",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg"
+  },
+  {
+    "english_name": "Angola",
+    "chinese_name": "安哥拉",
+    "alpha_2_code": "AO",
+    "alpha_3_code": "AGO",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg"
+  },
+  {
+    "english_name": "Anguilla",
+    "chinese_name": "安圭拉",
+    "alpha_2_code": "AI",
+    "alpha_3_code": "AIA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg"
+  },
+  {
+    "english_name": "Antarctica",
+    "chinese_name": "南极洲",
+    "alpha_2_code": "AQ",
+    "alpha_3_code": "ATA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Blank_flag.svg"
+  },
+  {
+    "english_name": "Antigua and Barbuda",
+    "chinese_name": "安提瓜和巴布达",
+    "alpha_2_code": "AG",
+    "alpha_3_code": "ATG",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg"
+  },
+  {
+    "english_name": "Argentina",
+    "chinese_name": "阿根廷",
+    "alpha_2_code": "AR",
+    "alpha_3_code": "ARG",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
+  },
+  {
+    "english_name": "Armenia",
+    "chinese_name": "亚美尼亚",
+    "alpha_2_code": "AM",
+    "alpha_3_code": "ARM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg"
+  },
+  {
+    "english_name": "Aruba",
+    "chinese_name": "阿鲁巴",
+    "alpha_2_code": "AW",
+    "alpha_3_code": "ABW",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg"
+  },
+  {
+    "english_name": "Australia",
+    "chinese_name": "澳大利亚",
+    "alpha_2_code": "AU",
+    "alpha_3_code": "AUS",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg"
+  },
+  {
+    "english_name": "Austria",
+    "chinese_name": "奥地利",
+    "alpha_2_code": "AT",
+    "alpha_3_code": "AUT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg"
+  },
+  {
+    "english_name": "Azerbaijan",
+    "chinese_name": "阿塞拜疆",
+    "alpha_2_code": "AZ",
+    "alpha_3_code": "AZE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg"
+  },
+  {
+    "english_name": "Bahamas (the)",
+    "chinese_name": "巴哈马",
+    "alpha_2_code": "BS",
+    "alpha_3_code": "BHS",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg"
+  },
+  {
+    "english_name": "Bahrain",
+    "chinese_name": "巴林",
+    "alpha_2_code": "BH",
+    "alpha_3_code": "BHR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg"
+  },
+  {
+    "english_name": "Bangladesh",
+    "chinese_name": "孟加拉国",
+    "alpha_2_code": "BD",
+    "alpha_3_code": "BGD",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg"
+  },
+  {
+    "english_name": "Barbados",
+    "chinese_name": "巴巴多斯",
+    "alpha_2_code": "BB",
+    "alpha_3_code": "BRB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg"
+  },
+  {
+    "english_name": "Belarus",
+    "chinese_name": "白俄罗斯",
+    "alpha_2_code": "BY",
+    "alpha_3_code": "BLR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg"
+  },
+  {
+    "english_name": "Belgium",
+    "chinese_name": "比利时",
+    "alpha_2_code": "BE",
+    "alpha_3_code": "BEL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_%28civil%29.svg"
+  },
+  {
+    "english_name": "Belize",
+    "chinese_name": "伯利兹",
+    "alpha_2_code": "BZ",
+    "alpha_3_code": "BLZ",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg"
+  },
+  {
+    "english_name": "Benin",
+    "chinese_name": "贝宁",
+    "alpha_2_code": "BJ",
+    "alpha_3_code": "BEN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg"
+  },
+  {
+    "english_name": "Bermuda",
+    "chinese_name": "百慕大",
+    "alpha_2_code": "BM",
+    "alpha_3_code": "BMU",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg"
+  },
+  {
+    "english_name": "Bhutan",
+    "chinese_name": "不丹",
+    "alpha_2_code": "BT",
+    "alpha_3_code": "BTN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg"
+  },
+  {
+    "english_name": "Bolivia (Plurinational State of)",
+    "chinese_name": "玻利维亚",
+    "alpha_2_code": "BO",
+    "alpha_3_code": "BOL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Bolivia.svg"
+  },
+  {
+    "english_name": "BonaireSint EustatiusSaba",
+    "chinese_name": "博内尔、圣尤斯特歇斯和萨巴",
+    "alpha_2_code": "BQ",
+    "alpha_3_code": "BES",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Bonaire.svg"
+  },
+  {
+    "english_name": "Bosnia and Herzegovina",
+    "chinese_name": "波斯尼亚和黑塞哥维那",
+    "alpha_2_code": "BA",
+    "alpha_3_code": "BIH",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg"
+  },
+  {
+    "english_name": "Botswana",
+    "chinese_name": "博茨瓦纳",
+    "alpha_2_code": "BW",
+    "alpha_3_code": "BWA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg"
+  },
+  {
+    "english_name": "Bouvet Island",
+    "chinese_name": "布韦岛",
+    "alpha_2_code": "BV",
+    "alpha_3_code": "BVT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"
+  },
+  {
+    "english_name": "Brazil",
+    "chinese_name": "巴西",
+    "alpha_2_code": "BR",
+    "alpha_3_code": "BRA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
+  },
+  {
+    "english_name": "British Indian Ocean Territory (the)",
+    "chinese_name": "英属印度洋领地",
+    "alpha_2_code": "IO",
+    "alpha_3_code": "IOT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_the_Commissioner_of_the_British_Indian_Ocean_Territory.svg"
+  },
+  {
+    "english_name": "Brunei Darussalam",
+    "chinese_name": "文莱达鲁萨兰国",
+    "alpha_2_code": "BN",
+    "alpha_3_code": "BRN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg"
+  },
+  {
+    "english_name": "Bulgaria",
+    "chinese_name": "保加利亚",
+    "alpha_2_code": "BG",
+    "alpha_3_code": "BGR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg"
+  },
+  {
+    "english_name": "Burkina Faso",
+    "chinese_name": "布基纳法索",
+    "alpha_2_code": "BF",
+    "alpha_3_code": "BFA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg"
+  },
+  {
+    "english_name": "Burundi",
+    "chinese_name": "布隆迪",
+    "alpha_2_code": "BI",
+    "alpha_3_code": "BDI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg"
+  },
+  {
+    "english_name": "Cabo Verde",
+    "chinese_name": "佛得角",
+    "alpha_2_code": "CV",
+    "alpha_3_code": "CPV",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg"
+  },
+  {
+    "english_name": "Cambodia",
+    "chinese_name": "柬埔寨",
+    "alpha_2_code": "KH",
+    "alpha_3_code": "KHM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+  },
+  {
+    "english_name": "Cameroon",
+    "chinese_name": "喀麦隆",
+    "alpha_2_code": "CM",
+    "alpha_3_code": "CMR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg"
+  },
+  {
+    "english_name": "Canada",
+    "chinese_name": "加拿大",
+    "alpha_2_code": "CA",
+    "alpha_3_code": "CAN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg"
+  },
+  {
+    "english_name": "Cayman Islands (the)",
+    "chinese_name": "开曼群岛",
+    "alpha_2_code": "KY",
+    "alpha_3_code": "CYM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Cayman_Islands.svg"
+  },
+  {
+    "english_name": "Central African Republic (the)",
+    "chinese_name": "中非共和国",
+    "alpha_2_code": "CF",
+    "alpha_3_code": "CAF",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg"
+  },
+  {
+    "english_name": "Chad",
+    "chinese_name": "乍得",
+    "alpha_2_code": "TD",
+    "alpha_3_code": "TCD",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg"
+  },
+  {
+    "english_name": "Chile",
+    "chinese_name": "智利",
+    "alpha_2_code": "CL",
+    "alpha_3_code": "CHL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"
+  },
+  {
+    "english_name": "China",
+    "chinese_name": "中国",
+    "alpha_2_code": "CN",
+    "alpha_3_code": "CHN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+  },
+  {
+    "english_name": "Christmas Island",
+    "chinese_name": "圣诞岛",
+    "alpha_2_code": "CX",
+    "alpha_3_code": "CXR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_Christmas_Island.svg"
+  },
+  {
+    "english_name": "Cocos (Keeling) Islands (the)",
+    "chinese_name": "科科斯(基林)群岛",
+    "alpha_2_code": "CC",
+    "alpha_3_code": "CCK",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg"
+  },
+  {
+    "english_name": "Colombia",
+    "chinese_name": "哥伦比亚",
+    "alpha_2_code": "CO",
+    "alpha_3_code": "COL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
+  },
+  {
+    "english_name": "Comoros (the)",
+    "chinese_name": "科摩罗",
+    "alpha_2_code": "KM",
+    "alpha_3_code": "COM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg"
+  },
+  {
+    "english_name": "Congo (the Democratic Republic of the)",
+    "chinese_name": "刚果民主共和国",
+    "alpha_2_code": "CD",
+    "alpha_3_code": "COD",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg"
+  },
+  {
+    "english_name": "Congo (the)",
+    "chinese_name": "刚果共和国",
+    "alpha_2_code": "CG",
+    "alpha_3_code": "COG",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg"
+  },
+  {
+    "english_name": "Cook Islands (the)",
+    "chinese_name": "库克群岛",
+    "alpha_2_code": "CK",
+    "alpha_3_code": "COK",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg"
+  },
+  {
+    "english_name": "Costa Rica",
+    "chinese_name": "哥斯达黎加",
+    "alpha_2_code": "CR",
+    "alpha_3_code": "CRI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg"
+  },
+  {
+    "english_name": "Côte d'Ivoire",
+    "chinese_name": "科特迪瓦",
+    "alpha_2_code": "CI",
+    "alpha_3_code": "CIV",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg"
+  },
+  {
+    "english_name": "Croatia",
+    "chinese_name": "克罗地亚",
+    "alpha_2_code": "HR",
+    "alpha_3_code": "HRV",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"
+  },
+  {
+    "english_name": "Cuba",
+    "chinese_name": "古巴",
+    "alpha_2_code": "CU",
+    "alpha_3_code": "CUB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg"
+  },
+  {
+    "english_name": "Curaçao",
+    "chinese_name": "库拉索",
+    "alpha_2_code": "CW",
+    "alpha_3_code": "CUW",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Cura%C3%A7ao.svg"
+  },
+  {
+    "english_name": "Cyprus",
+    "chinese_name": "塞浦路斯",
+    "alpha_2_code": "CY",
+    "alpha_3_code": "CYP",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg"
+  },
+  {
+    "english_name": "Czechia",
+    "chinese_name": "捷克",
+    "alpha_2_code": "CZ",
+    "alpha_3_code": "CZE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"
+  },
+  {
+    "english_name": "Denmark",
+    "chinese_name": "丹麦",
+    "alpha_2_code": "DK",
+    "alpha_3_code": "DNK",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"
+  },
+  {
+    "english_name": "Djibouti",
+    "chinese_name": "吉布提",
+    "alpha_2_code": "DJ",
+    "alpha_3_code": "DJI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg"
+  },
+  {
+    "english_name": "Dominica",
+    "chinese_name": "多米尼克",
+    "alpha_2_code": "DM",
+    "alpha_3_code": "DMA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg"
+  },
+  {
+    "english_name": "Dominican Republic (the)",
+    "chinese_name": "多米尼加共和国",
+    "alpha_2_code": "DO",
+    "alpha_3_code": "DOM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"
+  },
+  {
+    "english_name": "Ecuador",
+    "chinese_name": "厄瓜多尔",
+    "alpha_2_code": "EC",
+    "alpha_3_code": "ECU",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg"
+  },
+  {
+    "english_name": "Egypt",
+    "chinese_name": "埃及",
+    "alpha_2_code": "EG",
+    "alpha_3_code": "EGY",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg"
+  },
+  {
+    "english_name": "El Salvador",
+    "chinese_name": "萨尔瓦多",
+    "alpha_2_code": "SV",
+    "alpha_3_code": "SLV",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"
+  },
+  {
+    "english_name": "Equatorial Guinea",
+    "chinese_name": "赤道几内亚",
+    "alpha_2_code": "GQ",
+    "alpha_3_code": "GNQ",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Equatorial_Guinea.svg"
+  },
+  {
+    "english_name": "Eritrea",
+    "chinese_name": "厄立特里亚",
+    "alpha_2_code": "ER",
+    "alpha_3_code": "ERI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg"
+  },
+  {
+    "english_name": "Estonia",
+    "chinese_name": "爱沙尼亚",
+    "alpha_2_code": "EE",
+    "alpha_3_code": "EST",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg"
+  },
+  {
+    "english_name": "Eswatini",
+    "chinese_name": "埃斯瓦蒂尼",
+    "alpha_2_code": "SZ",
+    "alpha_3_code": "SWZ",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg"
+  },
+  {
+    "english_name": "Ethiopia",
+    "chinese_name": "埃塞俄比亚",
+    "alpha_2_code": "ET",
+    "alpha_3_code": "ETH",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg"
+  },
+  {
+    "english_name": "Falkland Islands (the)",
+    "chinese_name": "福克兰群岛",
+    "alpha_2_code": "FK",
+    "alpha_3_code": "FLK",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg"
+  },
+  {
+    "english_name": "Faroe Islands (the)",
+    "chinese_name": "法罗群岛",
+    "alpha_2_code": "FO",
+    "alpha_3_code": "FRO",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg"
+  },
+  {
+    "english_name": "Fiji",
+    "chinese_name": "斐济",
+    "alpha_2_code": "FJ",
+    "alpha_3_code": "FJI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg"
+  },
+  {
+    "english_name": "Finland",
+    "chinese_name": "芬兰",
+    "alpha_2_code": "FI",
+    "alpha_3_code": "FIN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg"
+  },
+  {
+    "english_name": "France",
+    "chinese_name": "法国",
+    "alpha_2_code": "FR",
+    "alpha_3_code": "FRA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  {
+    "english_name": "French Guiana",
+    "chinese_name": "法属圭亚那",
+    "alpha_2_code": "GF",
+    "alpha_3_code": "GUF",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  {
+    "english_name": "French Polynesia",
+    "chinese_name": "法属波利尼西亚",
+    "alpha_2_code": "PF",
+    "alpha_3_code": "PYF",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_French_Polynesia.svg"
+  },
+  {
+    "english_name": "French Southern Territories (the)",
+    "chinese_name": "法属南部领地",
+    "alpha_2_code": "TF",
+    "alpha_3_code": "ATF",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_the_French_Southern_and_Antarctic_Lands.svg"
+  },
+  {
+    "english_name": "Gabon",
+    "chinese_name": "加蓬",
+    "alpha_2_code": "GA",
+    "alpha_3_code": "GAB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg"
+  },
+  {
+    "english_name": "Gambia (the)",
+    "chinese_name": "冈比亚",
+    "alpha_2_code": "GM",
+    "alpha_3_code": "GMB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg"
+  },
+  {
+    "english_name": "Georgia",
+    "chinese_name": "格鲁吉亚",
+    "alpha_2_code": "GE",
+    "alpha_3_code": "GEO",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg"
+  },
+  {
+    "english_name": "Germany",
+    "chinese_name": "德国",
+    "alpha_2_code": "DE",
+    "alpha_3_code": "DEU",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"
+  },
+  {
+    "english_name": "Ghana",
+    "chinese_name": "加纳",
+    "alpha_2_code": "GH",
+    "alpha_3_code": "GHA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg"
+  },
+  {
+    "english_name": "Gibraltar",
+    "chinese_name": "直布罗陀",
+    "alpha_2_code": "GI",
+    "alpha_3_code": "GIB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Gibraltar.svg"
+  },
+  {
+    "english_name": "Greece",
+    "chinese_name": "希腊",
+    "alpha_2_code": "GR",
+    "alpha_3_code": "GRC",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg"
+  },
+  {
+    "english_name": "Greenland",
+    "chinese_name": "格陵兰",
+    "alpha_2_code": "GL",
+    "alpha_3_code": "GRL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg"
+  },
+  {
+    "english_name": "Grenada",
+    "chinese_name": "格林纳达",
+    "alpha_2_code": "GD",
+    "alpha_3_code": "GRD",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg"
+  },
+  {
+    "english_name": "Guadeloupe",
+    "chinese_name": "瓜德罗普",
+    "alpha_2_code": "GP",
+    "alpha_3_code": "GLP",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  {
+    "english_name": "Guam",
+    "chinese_name": "关岛",
+    "alpha_2_code": "GU",
+    "alpha_3_code": "GUM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_Guam.svg"
+  },
+  {
+    "english_name": "Guatemala",
+    "chinese_name": "危地马拉",
+    "alpha_2_code": "GT",
+    "alpha_3_code": "GTM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg"
+  },
+  {
+    "english_name": "Guernsey",
+    "chinese_name": "根西岛",
+    "alpha_2_code": "GG",
+    "alpha_3_code": "GGY",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg"
+  },
+  {
+    "english_name": "Guinea",
+    "chinese_name": "几内亚",
+    "alpha_2_code": "GN",
+    "alpha_3_code": "GIN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg"
+  },
+  {
+    "english_name": "Guinea-Bissau",
+    "chinese_name": "几内亚比绍",
+    "alpha_2_code": "GW",
+    "alpha_3_code": "GNB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg"
+  },
+  {
+    "english_name": "Guyana",
+    "chinese_name": "圭亚那",
+    "alpha_2_code": "GY",
+    "alpha_3_code": "GUY",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg"
+  },
+  {
+    "english_name": "Haiti",
+    "chinese_name": "海地",
+    "alpha_2_code": "HT",
+    "alpha_3_code": "HTI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg"
+  },
+  {
+    "english_name": "Heard Island and McDonald Islands",
+    "chinese_name": "赫德岛和麦当劳群岛",
+    "alpha_2_code": "HM",
+    "alpha_3_code": "HMD",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg"
+  },
+  {
+    "english_name": "Holy See (the)",
+    "chinese_name": "梵蒂冈",
+    "alpha_2_code": "VA",
+    "alpha_3_code": "VAT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Flag_of_Vatican_City_%282023%E2%80%93present%29.svg"
+  },
+  {
+    "english_name": "Honduras",
+    "chinese_name": "洪都拉斯",
+    "alpha_2_code": "HN",
+    "alpha_3_code": "HND",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Honduras_%282022%E2%80%93present%29.svg"
+  },
+  {
+    "english_name": "Hong Kong",
+    "chinese_name": "香港",
+    "alpha_2_code": "HK",
+    "alpha_3_code": "HKG",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg"
+  },
+  {
+    "english_name": "Hungary",
+    "chinese_name": "匈牙利",
+    "alpha_2_code": "HU",
+    "alpha_3_code": "HUN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg"
+  },
+  {
+    "english_name": "Iceland",
+    "chinese_name": "冰岛",
+    "alpha_2_code": "IS",
+    "alpha_3_code": "ISL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"
+  },
+  {
+    "english_name": "India",
+    "chinese_name": "印度",
+    "alpha_2_code": "IN",
+    "alpha_3_code": "IND",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+  },
+  {
+    "english_name": "Indonesia",
+    "chinese_name": "印度尼西亚",
+    "alpha_2_code": "ID",
+    "alpha_3_code": "IDN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+  },
+  {
+    "english_name": "Iran (Islamic Republic of)",
+    "chinese_name": "伊朗伊斯兰共和国",
+    "alpha_2_code": "IR",
+    "alpha_3_code": "IRN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
+  },
+  {
+    "english_name": "Iraq",
+    "chinese_name": "伊拉克",
+    "alpha_2_code": "IQ",
+    "alpha_3_code": "IRQ",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg"
+  },
+  {
+    "english_name": "Ireland",
+    "chinese_name": "爱尔兰",
+    "alpha_2_code": "IE",
+    "alpha_3_code": "IRL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"
+  },
+  {
+    "english_name": "Isle of Man",
+    "chinese_name": "曼岛",
+    "alpha_2_code": "IM",
+    "alpha_3_code": "IMN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Isle_of_Man.svg"
+  },
+  {
+    "english_name": "Israel",
+    "chinese_name": "以色列",
+    "alpha_2_code": "IL",
+    "alpha_3_code": "ISR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg"
+  },
+  {
+    "english_name": "Italy",
+    "chinese_name": "意大利",
+    "alpha_2_code": "IT",
+    "alpha_3_code": "ITA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
+  },
+  {
+    "english_name": "Jamaica",
+    "chinese_name": "牙买加",
+    "alpha_2_code": "JM",
+    "alpha_3_code": "JAM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg"
+  },
+  {
+    "english_name": "Japan",
+    "chinese_name": "日本",
+    "alpha_2_code": "JP",
+    "alpha_3_code": "JPN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+  },
+  {
+    "english_name": "Jersey",
+    "chinese_name": "泽西岛",
+    "alpha_2_code": "JE",
+    "alpha_3_code": "JEY",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg"
+  },
+  {
+    "english_name": "Jordan",
+    "chinese_name": "约旦",
+    "alpha_2_code": "JO",
+    "alpha_3_code": "JOR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg"
+  },
+  {
+    "english_name": "Kazakhstan",
+    "chinese_name": "哈萨克斯坦",
+    "alpha_2_code": "KZ",
+    "alpha_3_code": "KAZ",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg"
+  },
+  {
+    "english_name": "Kenya",
+    "chinese_name": "肯尼亚",
+    "alpha_2_code": "KE",
+    "alpha_3_code": "KEN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg"
+  },
+  {
+    "english_name": "Kiribati",
+    "chinese_name": "基里巴斯",
+    "alpha_2_code": "KI",
+    "alpha_3_code": "KIR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg"
+  },
+  {
+    "english_name": "Korea (the Democratic People's Republic of)",
+    "chinese_name": "朝鲜民主主义人民共和国",
+    "alpha_2_code": "KP",
+    "alpha_3_code": "PRK",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg"
+  },
+  {
+    "english_name": "Korea (the Republic of)",
+    "chinese_name": "大韩民国",
+    "alpha_2_code": "KR",
+    "alpha_3_code": "KOR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
+  },
+  {
+    "english_name": "Kuwait",
+    "chinese_name": "科威特",
+    "alpha_2_code": "KW",
+    "alpha_3_code": "KWT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg"
+  },
+  {
+    "english_name": "Kyrgyzstan",
+    "chinese_name": "吉尔吉斯斯坦",
+    "alpha_2_code": "KG",
+    "alpha_3_code": "KGZ",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg"
+  },
+  {
+    "english_name": "Lao People's Democratic Republic (the)",
+    "chinese_name": "老挝人民民主共和国",
+    "alpha_2_code": "LA",
+    "alpha_3_code": "LAO",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg"
+  },
+  {
+    "english_name": "Latvia",
+    "chinese_name": "拉脱维亚",
+    "alpha_2_code": "LV",
+    "alpha_3_code": "LVA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg"
+  },
+  {
+    "english_name": "Lebanon",
+    "chinese_name": "黎巴嫩",
+    "alpha_2_code": "LB",
+    "alpha_3_code": "LBN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg"
+  },
+  {
+    "english_name": "Lesotho",
+    "chinese_name": "莱索托",
+    "alpha_2_code": "LS",
+    "alpha_3_code": "LSO",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg"
+  },
+  {
+    "english_name": "Liberia",
+    "chinese_name": "利比里亚",
+    "alpha_2_code": "LR",
+    "alpha_3_code": "LBR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg"
+  },
+  {
+    "english_name": "Libya",
+    "chinese_name": "利比亚",
+    "alpha_2_code": "LY",
+    "alpha_3_code": "LBY",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Libya.svg"
+  },
+  {
+    "english_name": "Liechtenstein",
+    "chinese_name": "列支敦士登",
+    "alpha_2_code": "LI",
+    "alpha_3_code": "LIE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg"
+  },
+  {
+    "english_name": "Lithuania",
+    "chinese_name": "立陶宛",
+    "alpha_2_code": "LT",
+    "alpha_3_code": "LTU",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg"
+  },
+  {
+    "english_name": "Luxembourg",
+    "chinese_name": "卢森堡",
+    "alpha_2_code": "LU",
+    "alpha_3_code": "LUX",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg"
+  },
+  {
+    "english_name": "Macao",
+    "chinese_name": "澳门",
+    "alpha_2_code": "MO",
+    "alpha_3_code": "MAC",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg"
+  },
+  {
+    "english_name": "Madagascar",
+    "chinese_name": "马达加斯加",
+    "alpha_2_code": "MG",
+    "alpha_3_code": "MDG",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg"
+  },
+  {
+    "english_name": "Malawi",
+    "chinese_name": "马拉维",
+    "alpha_2_code": "MW",
+    "alpha_3_code": "MWI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg"
+  },
+  {
+    "english_name": "Malaysia",
+    "chinese_name": "马来西亚",
+    "alpha_2_code": "MY",
+    "alpha_3_code": "MYS",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+  },
+  {
+    "english_name": "Maldives",
+    "chinese_name": "马尔代夫",
+    "alpha_2_code": "MV",
+    "alpha_3_code": "MDV",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg"
+  },
+  {
+    "english_name": "Mali",
+    "chinese_name": "马里",
+    "alpha_2_code": "ML",
+    "alpha_3_code": "MLI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg"
+  },
+  {
+    "english_name": "Malta",
+    "chinese_name": "马耳他",
+    "alpha_2_code": "MT",
+    "alpha_3_code": "MLT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg"
+  },
+  {
+    "english_name": "Marshall Islands (the)",
+    "chinese_name": "马绍尔群岛",
+    "alpha_2_code": "MH",
+    "alpha_3_code": "MHL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg"
+  },
+  {
+    "english_name": "Martinique",
+    "chinese_name": "马提尼克",
+    "alpha_2_code": "MQ",
+    "alpha_3_code": "MTQ",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag-of-Martinique.svg"
+  },
+  {
+    "english_name": "Mauritania",
+    "chinese_name": "毛里塔尼亚",
+    "alpha_2_code": "MR",
+    "alpha_3_code": "MRT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Mauritania.svg"
+  },
+  {
+    "english_name": "Mauritius",
+    "chinese_name": "毛里求斯",
+    "alpha_2_code": "MU",
+    "alpha_3_code": "MUS",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg"
+  },
+  {
+    "english_name": "Mayotte",
+    "chinese_name": "马约特",
+    "alpha_2_code": "YT",
+    "alpha_3_code": "MYT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  {
+    "english_name": "Mexico",
+    "chinese_name": "墨西哥",
+    "alpha_2_code": "MX",
+    "alpha_3_code": "MEX",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
+  },
+  {
+    "english_name": "Micronesia (Federated States of)",
+    "chinese_name": "密克罗尼西亚联邦",
+    "alpha_2_code": "FM",
+    "alpha_3_code": "FSM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg"
+  },
+  {
+    "english_name": "Moldova (the Republic of)",
+    "chinese_name": "摩尔多瓦共和国",
+    "alpha_2_code": "MD",
+    "alpha_3_code": "MDA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg"
+  },
+  {
+    "english_name": "Monaco",
+    "chinese_name": "摩纳哥",
+    "alpha_2_code": "MC",
+    "alpha_3_code": "MCO",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg"
+  },
+  {
+    "english_name": "Mongolia",
+    "chinese_name": "蒙古",
+    "alpha_2_code": "MN",
+    "alpha_3_code": "MNG",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg"
+  },
+  {
+    "english_name": "Montenegro",
+    "chinese_name": "黑山",
+    "alpha_2_code": "ME",
+    "alpha_3_code": "MNE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg"
+  },
+  {
+    "english_name": "Montserrat",
+    "chinese_name": "蒙特塞拉特",
+    "alpha_2_code": "MS",
+    "alpha_3_code": "MSR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Montserrat.svg"
+  },
+  {
+    "english_name": "Morocco",
+    "chinese_name": "摩洛哥",
+    "alpha_2_code": "MA",
+    "alpha_3_code": "MAR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg"
+  },
+  {
+    "english_name": "Mozambique",
+    "chinese_name": "莫桑比克",
+    "alpha_2_code": "MZ",
+    "alpha_3_code": "MOZ",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg"
+  },
+  {
+    "english_name": "Myanmar",
+    "chinese_name": "缅甸",
+    "alpha_2_code": "MM",
+    "alpha_3_code": "MMR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg"
+  },
+  {
+    "english_name": "Namibia",
+    "chinese_name": "纳米比亚",
+    "alpha_2_code": "NA",
+    "alpha_3_code": "NAM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg"
+  },
+  {
+    "english_name": "Nauru",
+    "chinese_name": "瑙鲁",
+    "alpha_2_code": "NR",
+    "alpha_3_code": "NRU",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg"
+  },
+  {
+    "english_name": "Nepal",
+    "chinese_name": "尼泊尔",
+    "alpha_2_code": "NP",
+    "alpha_3_code": "NPL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg"
+  },
+  {
+    "english_name": "Netherlands (Kingdom of the)",
+    "chinese_name": "荷兰",
+    "alpha_2_code": "NL",
+    "alpha_3_code": "NLD",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
+  },
+  {
+    "english_name": "New Caledonia",
+    "chinese_name": "新喀里多尼亚",
+    "alpha_2_code": "NC",
+    "alpha_3_code": "NCL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flags_of_New_Caledonia.svg"
+  },
+  {
+    "english_name": "New Zealand",
+    "chinese_name": "新西兰",
+    "alpha_2_code": "NZ",
+    "alpha_3_code": "NZL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
+  },
+  {
+    "english_name": "Nicaragua",
+    "chinese_name": "尼加拉瓜",
+    "alpha_2_code": "NI",
+    "alpha_3_code": "NIC",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg"
+  },
+  {
+    "english_name": "Niger (the)",
+    "chinese_name": "尼日尔",
+    "alpha_2_code": "NE",
+    "alpha_3_code": "NER",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg"
+  },
+  {
+    "english_name": "Nigeria",
+    "chinese_name": "尼日利亚",
+    "alpha_2_code": "NG",
+    "alpha_3_code": "NGA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
+  },
+  {
+    "english_name": "Niue",
+    "chinese_name": "纽埃",
+    "alpha_2_code": "NU",
+    "alpha_3_code": "NIU",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg"
+  },
+  {
+    "english_name": "Norfolk Island",
+    "chinese_name": "诺福克岛",
+    "alpha_2_code": "NF",
+    "alpha_3_code": "NFK",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Norfolk_Island.svg"
+  },
+  {
+    "english_name": "North Macedonia",
+    "chinese_name": "北马其顿",
+    "alpha_2_code": "MK",
+    "alpha_3_code": "MKD",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_North_Macedonia.svg"
+  },
+  {
+    "english_name": "Northern Mariana Islands (the)",
+    "chinese_name": "北马里亚纳群岛",
+    "alpha_2_code": "MP",
+    "alpha_3_code": "MNP",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Northern_Mariana_Islands.svg"
+  },
+  {
+    "english_name": "Norway",
+    "chinese_name": "挪威",
+    "alpha_2_code": "NO",
+    "alpha_3_code": "NOR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"
+  },
+  {
+    "english_name": "Oman",
+    "chinese_name": "阿曼",
+    "alpha_2_code": "OM",
+    "alpha_3_code": "OMN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg"
+  },
+  {
+    "english_name": "Pakistan",
+    "chinese_name": "巴基斯坦",
+    "alpha_2_code": "PK",
+    "alpha_3_code": "PAK",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+  },
+  {
+    "english_name": "Palau",
+    "chinese_name": "帕劳",
+    "alpha_2_code": "PW",
+    "alpha_3_code": "PLW",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg"
+  },
+  {
+    "english_name": "Palestine, State of",
+    "chinese_name": "巴勒斯坦国",
+    "alpha_2_code": "PS",
+    "alpha_3_code": "PSE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg"
+  },
+  {
+    "english_name": "Panama",
+    "chinese_name": "巴拿马",
+    "alpha_2_code": "PA",
+    "alpha_3_code": "PAN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"
+  },
+  {
+    "english_name": "Papua New Guinea",
+    "chinese_name": "巴布亚新几内亚",
+    "alpha_2_code": "PG",
+    "alpha_3_code": "PNG",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg"
+  },
+  {
+    "english_name": "Paraguay",
+    "chinese_name": "巴拉圭",
+    "alpha_2_code": "PY",
+    "alpha_3_code": "PRY",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg"
+  },
+  {
+    "english_name": "Peru",
+    "chinese_name": "秘鲁",
+    "alpha_2_code": "PE",
+    "alpha_3_code": "PER",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
+  },
+  {
+    "english_name": "Philippines (the)",
+    "chinese_name": "菲律宾",
+    "alpha_2_code": "PH",
+    "alpha_3_code": "PHL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg"
+  },
+  {
+    "english_name": "Pitcairn",
+    "chinese_name": "皮特凯恩群岛",
+    "alpha_2_code": "PN",
+    "alpha_3_code": "PCN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_the_Pitcairn_Islands.svg"
+  },
+  {
+    "english_name": "Poland",
+    "chinese_name": "波兰",
+    "alpha_2_code": "PL",
+    "alpha_3_code": "POL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg"
+  },
+  {
+    "english_name": "Portugal",
+    "chinese_name": "葡萄牙",
+    "alpha_2_code": "PT",
+    "alpha_3_code": "PRT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Flag_of_Portugal_%28official%29.svg"
+  },
+  {
+    "english_name": "Puerto Rico",
+    "chinese_name": "波多黎各",
+    "alpha_2_code": "PR",
+    "alpha_3_code": "PRI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg"
+  },
+  {
+    "english_name": "Qatar",
+    "chinese_name": "卡塔尔",
+    "alpha_2_code": "QA",
+    "alpha_3_code": "QAT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg"
+  },
+  {
+    "english_name": "Réunion",
+    "chinese_name": "留尼汪",
+    "alpha_2_code": "RE",
+    "alpha_3_code": "REU",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  {
+    "english_name": "Romania",
+    "chinese_name": "罗马尼亚",
+    "alpha_2_code": "RO",
+    "alpha_3_code": "ROU",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"
+  },
+  {
+    "english_name": "Russian Federation (the)",
+    "chinese_name": "俄罗斯联邦",
+    "alpha_2_code": "RU",
+    "alpha_3_code": "RUS",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
+  },
+  {
+    "english_name": "Rwanda",
+    "chinese_name": "卢旺达",
+    "alpha_2_code": "RW",
+    "alpha_3_code": "RWA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg"
+  },
+  {
+    "english_name": "Saint Barthélemy",
+    "chinese_name": "圣巴泰勒米",
+    "alpha_2_code": "BL",
+    "alpha_3_code": "BLM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  {
+    "english_name": "Saint HelenaAscension IslandTristan da Cunha",
+    "chinese_name": "圣赫勒拿、阿森松和特里斯坦-达库尼亚",
+    "alpha_2_code": "SH",
+    "alpha_3_code": "SHN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Saint_Helena.svg"
+  },
+  {
+    "english_name": "Saint Kitts and Nevis",
+    "chinese_name": "圣基茨和尼维斯",
+    "alpha_2_code": "KN",
+    "alpha_3_code": "KNA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg"
+  },
+  {
+    "english_name": "Saint Lucia",
+    "chinese_name": "圣卢西亚",
+    "alpha_2_code": "LC",
+    "alpha_3_code": "LCA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg"
+  },
+  {
+    "english_name": "Saint Martin (French part)",
+    "chinese_name": "法属圣马丁",
+    "alpha_2_code": "MF",
+    "alpha_3_code": "MAF",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  {
+    "english_name": "Saint Pierre and Miquelon",
+    "chinese_name": "圣皮埃尔和密克隆",
+    "alpha_2_code": "PM",
+    "alpha_3_code": "SPM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  {
+    "english_name": "Saint Vincent and the Grenadines",
+    "chinese_name": "圣文森特和格林纳丁斯",
+    "alpha_2_code": "VC",
+    "alpha_3_code": "VCT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg"
+  },
+  {
+    "english_name": "Samoa",
+    "chinese_name": "萨摩亚",
+    "alpha_2_code": "WS",
+    "alpha_3_code": "WSM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg"
+  },
+  {
+    "english_name": "San Marino",
+    "chinese_name": "圣马力诺",
+    "alpha_2_code": "SM",
+    "alpha_3_code": "SMR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg"
+  },
+  {
+    "english_name": "Sao Tome and Principe",
+    "chinese_name": "圣多美和普林西比",
+    "alpha_2_code": "ST",
+    "alpha_3_code": "STP",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg"
+  },
+  {
+    "english_name": "Saudi Arabia",
+    "chinese_name": "沙特阿拉伯",
+    "alpha_2_code": "SA",
+    "alpha_3_code": "SAU",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
+  },
+  {
+    "english_name": "Senegal",
+    "chinese_name": "塞内加尔",
+    "alpha_2_code": "SN",
+    "alpha_3_code": "SEN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg"
+  },
+  {
+    "english_name": "Serbia",
+    "chinese_name": "塞尔维亚",
+    "alpha_2_code": "RS",
+    "alpha_3_code": "SRB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg"
+  },
+  {
+    "english_name": "Seychelles",
+    "chinese_name": "塞舌尔",
+    "alpha_2_code": "SC",
+    "alpha_3_code": "SYC",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg"
+  },
+  {
+    "english_name": "Sierra Leone",
+    "chinese_name": "塞拉利昂",
+    "alpha_2_code": "SL",
+    "alpha_3_code": "SLE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg"
+  },
+  {
+    "english_name": "Singapore",
+    "chinese_name": "新加坡",
+    "alpha_2_code": "SG",
+    "alpha_3_code": "SGP",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg"
+  },
+  {
+    "english_name": "Sint Maarten (Dutch part)",
+    "chinese_name": "荷属圣马丁",
+    "alpha_2_code": "SX",
+    "alpha_3_code": "SXM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Sint_Maarten.svg"
+  },
+  {
+    "english_name": "Slovakia",
+    "chinese_name": "斯洛伐克",
+    "alpha_2_code": "SK",
+    "alpha_3_code": "SVK",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"
+  },
+  {
+    "english_name": "Slovenia",
+    "chinese_name": "斯洛文尼亚",
+    "alpha_2_code": "SI",
+    "alpha_3_code": "SVN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg"
+  },
+  {
+    "english_name": "Solomon Islands",
+    "chinese_name": "所罗门群岛",
+    "alpha_2_code": "SB",
+    "alpha_3_code": "SLB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg"
+  },
+  {
+    "english_name": "Somalia",
+    "chinese_name": "索马里",
+    "alpha_2_code": "SO",
+    "alpha_3_code": "SOM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg"
+  },
+  {
+    "english_name": "South Africa",
+    "chinese_name": "南非",
+    "alpha_2_code": "ZA",
+    "alpha_3_code": "ZAF",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
+  },
+  {
+    "english_name": "South Georgia and the South Sandwich Islands",
+    "chinese_name": "南乔治亚和南桑威奇群岛",
+    "alpha_2_code": "GS",
+    "alpha_3_code": "SGS",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg"
+  },
+  {
+    "english_name": "South Sudan",
+    "chinese_name": "南苏丹",
+    "alpha_2_code": "SS",
+    "alpha_3_code": "SSD",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg"
+  },
+  {
+    "english_name": "Spain",
+    "chinese_name": "西班牙",
+    "alpha_2_code": "ES",
+    "alpha_3_code": "ESP",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+  },
+  {
+    "english_name": "Sri Lanka",
+    "chinese_name": "斯里兰卡",
+    "alpha_2_code": "LK",
+    "alpha_3_code": "LKA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg"
+  },
+  {
+    "english_name": "Sudan (the)",
+    "chinese_name": "苏丹",
+    "alpha_2_code": "SD",
+    "alpha_3_code": "SDN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg"
+  },
+  {
+    "english_name": "Suriname",
+    "chinese_name": "苏里南",
+    "alpha_2_code": "SR",
+    "alpha_3_code": "SUR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg"
+  },
+  {
+    "english_name": "SvalbardJan Mayen",
+    "chinese_name": "斯瓦尔巴和扬马延",
+    "alpha_2_code": "SJ",
+    "alpha_3_code": "SJM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"
+  },
+  {
+    "english_name": "Sweden",
+    "chinese_name": "瑞典",
+    "alpha_2_code": "SE",
+    "alpha_3_code": "SWE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"
+  },
+  {
+    "english_name": "Switzerland",
+    "chinese_name": "瑞士",
+    "alpha_2_code": "CH",
+    "alpha_3_code": "CHE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg"
+  },
+  {
+    "english_name": "Syrian Arab Republic (the)",
+    "chinese_name": "阿拉伯叙利亚共和国",
+    "alpha_2_code": "SY",
+    "alpha_3_code": "SYR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_Syria_%282025-%29.svg"
+  },
+  {
+    "english_name": "Taiwan (Province of China)",
+    "chinese_name": "台湾",
+    "alpha_2_code": "TW",
+    "alpha_3_code": "TWN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg"
+  },
+  {
+    "english_name": "Tajikistan",
+    "chinese_name": "塔吉克斯坦",
+    "alpha_2_code": "TJ",
+    "alpha_3_code": "TJK",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg"
+  },
+  {
+    "english_name": "Tanzania, the United Republic of",
+    "chinese_name": "坦桑尼亚联合共和国",
+    "alpha_2_code": "TZ",
+    "alpha_3_code": "TZA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg"
+  },
+  {
+    "english_name": "Thailand",
+    "chinese_name": "泰国",
+    "alpha_2_code": "TH",
+    "alpha_3_code": "THA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"
+  },
+  {
+    "english_name": "Timor-Leste",
+    "chinese_name": "东帝汶",
+    "alpha_2_code": "TL",
+    "alpha_3_code": "TLS",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg"
+  },
+  {
+    "english_name": "Togo",
+    "chinese_name": "多哥",
+    "alpha_2_code": "TG",
+    "alpha_3_code": "TGO",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Togo_%283-2%29.svg"
+  },
+  {
+    "english_name": "Tokelau",
+    "chinese_name": "托克劳",
+    "alpha_2_code": "TK",
+    "alpha_3_code": "TKL",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg"
+  },
+  {
+    "english_name": "Tonga",
+    "chinese_name": "汤加",
+    "alpha_2_code": "TO",
+    "alpha_3_code": "TON",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg"
+  },
+  {
+    "english_name": "Trinidad and Tobago",
+    "chinese_name": "特立尼达和多巴哥",
+    "alpha_2_code": "TT",
+    "alpha_3_code": "TTO",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg"
+  },
+  {
+    "english_name": "Tunisia",
+    "chinese_name": "突尼斯",
+    "alpha_2_code": "TN",
+    "alpha_3_code": "TUN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"
+  },
+  {
+    "english_name": "Türkiye",
+    "chinese_name": "土耳其",
+    "alpha_2_code": "TR",
+    "alpha_3_code": "TUR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+  },
+  {
+    "english_name": "Turkmenistan",
+    "chinese_name": "土库曼斯坦",
+    "alpha_2_code": "TM",
+    "alpha_3_code": "TKM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg"
+  },
+  {
+    "english_name": "Turks and Caicos Islands (the)",
+    "chinese_name": "特克斯和凯科斯群岛",
+    "alpha_2_code": "TC",
+    "alpha_3_code": "TCA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg"
+  },
+  {
+    "english_name": "Tuvalu",
+    "chinese_name": "图瓦卢",
+    "alpha_2_code": "TV",
+    "alpha_3_code": "TUV",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg"
+  },
+  {
+    "english_name": "Uganda",
+    "chinese_name": "乌干达",
+    "alpha_2_code": "UG",
+    "alpha_3_code": "UGA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg"
+  },
+  {
+    "english_name": "Ukraine",
+    "chinese_name": "乌克兰",
+    "alpha_2_code": "UA",
+    "alpha_3_code": "UKR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"
+  },
+  {
+    "english_name": "United Arab Emirates (the)",
+    "chinese_name": "阿拉伯联合酋长国",
+    "alpha_2_code": "AE",
+    "alpha_3_code": "ARE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg"
+  },
+  {
+    "english_name": "United Kingdom of Great Britain and Northern Ireland (the)",
+    "chinese_name": "英国",
+    "alpha_2_code": "GB",
+    "alpha_3_code": "GBR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+  },
+  {
+    "english_name": "United States Minor Outlying Islands (the)",
+    "chinese_name": "美国本土外小岛屿",
+    "alpha_2_code": "UM",
+    "alpha_3_code": "UMI",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg"
+  },
+  {
+    "english_name": "United States of America (the)",
+    "chinese_name": "美国",
+    "alpha_2_code": "US",
+    "alpha_3_code": "USA",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+  },
+  {
+    "english_name": "Uruguay",
+    "chinese_name": "乌拉圭",
+    "alpha_2_code": "UY",
+    "alpha_3_code": "URY",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"
+  },
+  {
+    "english_name": "Uzbekistan",
+    "chinese_name": "乌兹别克斯坦",
+    "alpha_2_code": "UZ",
+    "alpha_3_code": "UZB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg"
+  },
+  {
+    "english_name": "Vanuatu",
+    "chinese_name": "瓦努阿图",
+    "alpha_2_code": "VU",
+    "alpha_3_code": "VUT",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg"
+  },
+  {
+    "english_name": "Venezuela (Bolivarian Republic of)",
+    "chinese_name": "委内瑞拉玻利瓦尔共和国",
+    "alpha_2_code": "VE",
+    "alpha_3_code": "VEN",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg"
+  },
+  {
+    "english_name": "Viet Nam",
+    "chinese_name": "越南",
+    "alpha_2_code": "VN",
+    "alpha_3_code": "VNM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
+  },
+  {
+    "english_name": "Virgin Islands (British)",
+    "chinese_name": "英属维尔京群岛",
+    "alpha_2_code": "VG",
+    "alpha_3_code": "VGB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_British_Virgin_Islands.svg"
+  },
+  {
+    "english_name": "Virgin Islands (U.S.)",
+    "chinese_name": "美属维尔京群岛",
+    "alpha_2_code": "VI",
+    "alpha_3_code": "VIR",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_the_United_States_Virgin_Islands.svg"
+  },
+  {
+    "english_name": "Wallis and Futuna",
+    "chinese_name": "瓦利斯和富图纳",
+    "alpha_2_code": "WF",
+    "alpha_3_code": "WLF",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+  },
+  {
+    "english_name": "Western Sahara",
+    "chinese_name": "西撒哈拉",
+    "alpha_2_code": "EH",
+    "alpha_3_code": "ESH",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_the_Sahrawi_Arab_Democratic_Republic.svg"
+  },
+  {
+    "english_name": "Yemen",
+    "chinese_name": "也门",
+    "alpha_2_code": "YE",
+    "alpha_3_code": "YEM",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg"
+  },
+  {
+    "english_name": "Zambia",
+    "chinese_name": "赞比亚",
+    "alpha_2_code": "ZM",
+    "alpha_3_code": "ZMB",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg"
+  },
+  {
+    "english_name": "Zimbabwe",
+    "chinese_name": "津巴布韦",
+    "alpha_2_code": "ZW",
+    "alpha_3_code": "ZWE",
+    "flag_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg"
+  }
+]

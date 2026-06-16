@@ -68,18 +68,27 @@ const initThreeJS = () => {
   controls.minDistance = 10
   controls.maxDistance = 1000
   controls.enablePan = true
-  controls.autoRotate = true
-  controls.autoRotateSpeed = 0.5
+  controls.autoRotate = false // 关掉控制器的自动旋转，改用模型自身的自转
   controls.maxPolarAngle = Math.PI
   controls.target.copy(targetControlsTarget)
 
   // 监听用户手动操作，打断自动运镜
+  let interactTimeout: any = null
   controls.addEventListener('start', () => {
     isUserInteracting = true
+    if (interactTimeout) clearTimeout(interactTimeout)
   })
   
-  // 如果需要用户停止操作后恢复自动运镜，可以监听 'end' 并设置延时，这里保持用户手动控制的优先级
-  // controls.addEventListener('end', () => { ... })
+  // 用户停止操作后，延迟恢复自动运镜和旋转
+  controls.addEventListener('end', () => {
+    interactTimeout = setTimeout(() => {
+      // 不重置 targetCameraPos，这样就不会把用户拖拽后的视角强行拉回去
+      // 直接把当前视角设为目标视角，保持用户的视角
+      targetCameraPos.copy(camera.position)
+      targetControlsTarget.copy(controls.target)
+      isUserInteracting = false
+    }, 2000)
+  })
 
   // 加载模型
   const loader = new GLTFLoader()
@@ -98,8 +107,17 @@ const initThreeJS = () => {
     
     // 只有在用户没有手动干预时，才执行自动平滑运镜
     if (!isUserInteracting) {
-      camera.position.lerp(targetCameraPos, 0.02)
-      controls.target.lerp(targetControlsTarget, 0.02)
+      // 检查当前相机与目标点的距离，只有距离较远时才进行平滑移动（如路由切换时）
+      const dist = camera.position.distanceTo(targetCameraPos)
+      if (dist > 1.0) {
+        camera.position.lerp(targetCameraPos, 0.02)
+        controls.target.lerp(targetControlsTarget, 0.02)
+      } else {
+        // 当相机已经到达目标位置后，模型自身开始缓慢旋转
+        if (stadiumModel) {
+          stadiumModel.rotation.y += 0.0008
+        }
+      }
     }
 
     controls.update()

@@ -19,7 +19,7 @@ new_code = """class LLMPredictionRequest(BaseModel):
     force_refresh: bool = False
 
 client = OpenAI(
-    api_key="sk-f3a841c03faa4f63bf3a45bfbf010edb",
+    api_key=os.getenv("QWEN_API_KEY", "YOUR_API_KEY_HERE"),
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 

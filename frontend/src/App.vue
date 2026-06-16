@@ -9,6 +9,7 @@
           <img src="/favicon.png" alt="Logo" class="logo-img" />
           <span class="title" >WC2026 智能投注辅助决策引擎</span>
         </div>
+        <div class="header-time">{{ currentTime }}</div>
         <el-menu mode="horizontal" :router="true" :default-active="$route.path" class="nav-menu" background-color="transparent" text-color="#A0A0A0" active-text-color="#D2A76D">
           <el-menu-item index="/">赛事大屏</el-menu-item>
           <el-menu-item index="/teams">球队库</el-menu-item>
@@ -16,7 +17,7 @@
         </el-menu>
       </el-header>
       
-      <el-main class="main-content" :class="{ 'is-dashboard': $route.path === '/' }">
+      <el-main class="main-content" :class="{ 'is-dashboard': $route.path === '/' || $route.path === '/prediction' }">
         <router-view></router-view>
       </el-main>
     </el-container>
@@ -25,6 +26,26 @@
 
 <script setup lang="ts">
 import StadiumBackground from './components/StadiumBackground.vue'
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const currentTime = ref('')
+let timer: any = null
+
+onMounted(() => {
+  const updateTime = () => {
+    const now = new Date()
+    currentTime.value = now.toLocaleString('zh-CN', {
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', second: '2-digit'
+    }).replace(/\//g, '-')
+  }
+  updateTime()
+  timer = setInterval(updateTime, 1000)
+})
+
+onUnmounted(() => {
+  if (timer) clearInterval(timer)
+})
 </script>
 
 <style>
@@ -113,10 +134,23 @@ body, html {
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 2px;
+  color: #D2A76D; /* 香槟金 */
+  text-transform: uppercase;
+}
+
+.header-time {
+  font-size: 16px;
+  color: #D2A76D;
+  font-family: monospace;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-menu {
   border-bottom: none !important;
+  height: 60px;
   font-size: 16px;
 }
 

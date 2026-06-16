@@ -3,7 +3,7 @@ import psycopg2
 DB_PARAMS = {
     "dbname": "postgres",
     "user": "postgres",
-    "password": "002505@Zx",
+    "password": os.getenv("DB_PASSWORD", "postgres"),
     "host": "localhost",
     "port": 5432
 }

@@ -6,8 +6,24 @@
     <!-- 巨型柔和暗金环境光晕 (Ethereal backlight) -->
     <div class="ethereal-glow"></div>
     
-    <!-- 顶部数据挂件区 -->
-    <div class="top-widgets">
+    <!-- 左侧操作挂件 -->
+    <div class="top-widgets left-widgets">
+      <div class="widget-box action-widget glass-panel" @click="showHistory = true" title="历史分析记录">
+        <div class="w-title">分析记录</div>
+        <div class="w-value"><el-icon><Tickets /></el-icon></div>
+      </div>
+      <div class="widget-box action-widget glass-panel" @click="goToBracket" title="全局淘汰赛程">
+        <div class="w-title">淘汰赛程</div>
+        <div class="w-value"><el-icon><Share /></el-icon></div>
+      </div>
+      <div class="widget-box action-widget glass-panel" @click="goToPlayer" title="玩家决策系统">
+        <div class="w-title">盈利策略</div>
+        <div class="w-value"><el-icon><User /></el-icon></div>
+      </div>
+    </div>
+
+    <!-- 右侧数据挂件 -->
+    <div class="top-widgets right-widgets">
       <div class="widget-box glass-panel">
         <div class="w-title">赛事倒计时</div>
         <div class="w-value highlight">{{ countdownDays }} <span class="unit">天</span></div>
@@ -125,7 +141,7 @@
             </div>
             <div class="stadium"><el-icon><Location /></el-icon> {{ focusMatch.stadium }}</div>
             <el-button type="primary" class="cyber-btn" @click.stop="goToDetail(focusMatch)">
-              <span>启动分析引擎</span>
+              <span>{{ isMatchEnded(focusMatch) ? '查看历史分析记录' : '启动分析引擎' }}</span>
             </el-button>
           </div>
           <div class="side-tag away-tag">客场</div>
@@ -222,28 +238,65 @@
       <div class="section-title">
         <span class="bracket">[</span> UPCOMING SCHEDULE <span class="bracket">]</span>
       </div>
-      <div class="match-grid">
-        <div
-          class="grid-card glass-panel"
-          v-for="(match, index) in upcomingMatches"
-          :key="index"
-          @click="goToDetail(match)"
-        >
-          <div class="card-glow"></div>
+      <div class="schedule-container">
+        <div class="match-grid">
+          <div
+            class="grid-card glass-panel"
+            :class="{ 'active-match': match === focusMatch }"
+            v-for="(match, index) in upcomingMatches"
+            :key="index"
+            @click="selectMatch(match)"
+          >
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <span class="card-group">{{ match.group }}</span>
+              <span class="card-time">{{ match.time }}</span>
+            </div>
+            <div class="card-teams">
+              <span class="t-name">{{ match.team1 }}</span>
+              <span class="t-vs">vs</span>
+              <span class="t-name">{{ match.team2 }}</span>
+            </div>
+            <div class="card-footer">
+              {{ match.date }}<br/>{{ match.stadium }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 历史数据抽屉外层包裹，恢复指针事件 -->
+    <div class="drawer-wrapper" style="pointer-events: auto;">
+      <el-drawer
+        v-model="showHistory"
+        title="历史比赛分析记录"
+        direction="ltr"
+        size="380px"
+        class="cyber-drawer"
+        :append-to-body="false"
+      >
+        <div class="history-list">
+          <div
+            class="history-card glass-panel ended-match"
+            v-for="(match, index) in endedMatches"
+            :key="index"
+            @click="loadHistoryMatch(match)"
+          >
           <div class="card-header">
             <span class="card-group">{{ match.group }}</span>
-            <span class="card-time">{{ match.time }}</span>
+            <span class="card-time">{{ match.date }} {{ match.time }}</span>
           </div>
           <div class="card-teams">
             <span class="t-name">{{ match.team1 }}</span>
             <span class="t-vs">vs</span>
             <span class="t-name">{{ match.team2 }}</span>
           </div>
-          <div class="card-footer">
-            {{ match.date }}<br/>{{ match.stadium }}
-          </div>
+        </div>
+        <div v-if="endedMatches.length === 0" class="empty-history">
+          暂无已结束的比赛
         </div>
       </div>
+    </el-drawer>
     </div>
   </div>
 </template>
@@ -253,12 +306,14 @@ import { ref, onMounted, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
-import { Location } from '@element-plus/icons-vue'
+import { Location, Tickets, Share, User } from '@element-plus/icons-vue'
 
 const router = useRouter()
 const scheduleData = ref<any[]>([])
 const team1Data = ref<any>(null)
 const team2Data = ref<any>(null)
+const selectedMatch = ref<any>(null)
+const showHistory = ref(false)
 
 const countdownDays = computed(() => {
   const today = new Date()
@@ -267,13 +322,42 @@ const countdownDays = computed(() => {
   return diff > 0 ? Math.ceil(diff / (1000 * 3600 * 24)) : 0
 })
 
+const isMatchEnded = (m: any) => {
+  if (!m || !m.date) return false;
+  const now = new Date();
+  const dateMatch = m.date.match(/(\d{2})月(\d{2})日/);
+  const timeMatch = m.time ? m.time.match(/(\d{2}):(\d{2})/) : null;
+  
+  if (dateMatch && timeMatch) {
+    const month = parseInt(dateMatch[1], 10) - 1;
+    const day = parseInt(dateMatch[2], 10);
+    const hours = parseInt(timeMatch[1], 10);
+    const minutes = parseInt(timeMatch[2], 10);
+    const matchDate = new Date(2026, month, day, hours, minutes);
+    return matchDate <= now;
+  }
+  return false;
+}
+
 const focusMatch = computed(() => {
-  return scheduleData.value.length > 0 ? scheduleData.value[0] : null
+  if (selectedMatch.value) return selectedMatch.value;
+  if (scheduleData.value.length === 0) return null;
+  
+  const upcoming = scheduleData.value.find(m => !isMatchEnded(m));
+  return upcoming || scheduleData.value[0];
 })
 
 const upcomingMatches = computed(() => {
-  return scheduleData.value.length > 1 ? scheduleData.value.slice(1) : []
+  return scheduleData.value.filter(m => !isMatchEnded(m));
 })
+
+const endedMatches = computed(() => {
+  return scheduleData.value.filter(m => isMatchEnded(m));
+})
+
+const selectMatch = (match: any) => {
+  selectedMatch.value = match
+}
 
 const fetchTeamData = async (teamName: string, isTeam1: boolean) => {
   try {
@@ -302,6 +386,11 @@ const fetchSchedule = async () => {
   try {
     const res = await axios.get('http://localhost:10086/api/schedule')
     scheduleData.value = res.data
+    // 页面初次加载时，手动触发一次 focusMatch 的监听逻辑
+    if (focusMatch.value) {
+      fetchTeamData(focusMatch.value.team1, true)
+      fetchTeamData(focusMatch.value.team2, false)
+    }
   } catch (error) {
     ElMessage.error('无法加载赛程数据，请检查后端服务')
   }
@@ -332,8 +421,19 @@ const getRatingClass = (rating: number) => {
 const goToDetail = (match: any) => {
   router.push({
     path: '/prediction',
-    query: { team1: match.team1, team2: match.team2 }
+    query: { team1: match.team1, team2: match.team2, ended: isMatchEnded(match) ? '1' : '0' }
   })
+}
+
+const loadHistoryMatch = (match) => {
+  selectedMatch.value = match
+  showHistory.value = false // 点击后自动关闭抽屉
+}
+const goToBracket = () => {
+  router.push('/bracket')
+}
+const goToPlayer = () => {
+  router.push('/player')
 }
 
 onMounted(async () => {
@@ -368,6 +468,7 @@ onMounted(async () => {
   position: relative;
   pointer-events: none; /* 让顶层穿透 */
   background: transparent; /* 确保自身透明 */
+  padding: 20px 40px; /* 统一的外围内边距，实现严丝合缝的对齐 */
 }
 
 /* ================= 科幻指挥中心环境底座 ================= */
@@ -397,25 +498,60 @@ onMounted(async () => {
   pointer-events: none;
 }
 
-/* ======= 顶部挂件优化 ======= */
+/* ======= 顶部挂件组 ======= */
 .top-widgets {
   position: absolute;
-  top: 60px; /* 从 90px 上移到 60px，与中央球队卡片的视觉顶部保持完全一致 */
-  right: 30px;
+  top: 60px;
+  width: 320px; /* 强制与下方的 side-data-panel 等宽对齐 */
   display: flex;
   gap: 15px;
   z-index: 20;
+  pointer-events: auto; /* 恢复点击 */
+}
+
+.left-widgets {
+  left: 40px; /* 严格对齐左侧边界 */
+}
+
+.right-widgets {
+  right: 40px; /* 严格对齐右侧边界 */
 }
 
 .widget-box {
+  flex: 1; /* 平分 320px 的宽度 */
   background: rgba(30, 26, 23, 0.6); /* 深古铜底色 */
-  padding: 6px 15px;
+  padding: 8px 10px;
   border-radius: 6px;
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  min-width: 80px;
+  align-items: center; /* 居中对齐文字 */
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid rgba(210, 167, 109, 0.15); /* 增加统一的弱边框 */
+  transition: all 0.3s;
+}
+
+.action-widget {
+  cursor: pointer;
+}
+
+.action-widget:hover {
+  background: rgba(210, 167, 109, 0.15);
+  border-color: rgba(210, 167, 109, 0.4);
+  box-shadow: 0 0 10px rgba(210, 167, 109, 0.3);
+  transform: translateY(-1px);
+}
+
+.action-widget .w-value {
+  font-size: 1.4rem;
+  color: #A0A0A0; /* 默认中灰 */
+  display: flex;
+  align-items: center;
+}
+
+.action-widget:hover .w-value {
+  color: #D2A76D; /* 悬停香槟金 */
 }
 
 .w-title {
@@ -423,6 +559,7 @@ onMounted(async () => {
   color: #A0A0A0; /* 中灰色文本 */
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .w-value {
@@ -493,8 +630,9 @@ onMounted(async () => {
 .focus-match-display {
   display: flex;
   justify-content: space-between; /* 极大地拉开两队距离 */
-  align-items: center;
-  width: 95%;
+  align-items: stretch;
+  width: 100%;
+  padding: 0; /* 移除内边距，让子元素直接贴边 */
   max-width: 1700px;
   pointer-events: none; 
 }
@@ -502,22 +640,35 @@ onMounted(async () => {
 /* ======= 两侧数据面板 (效果图还原) ======= */
 .side-data-panel {
   position: absolute;
-  top: 140px; /* 从 70px 下移到 140px，远离顶部状态栏 */
-  width: 420px;
+  top: 140px; 
+  width: 320px; /* 强制左侧和右侧宽度完全相同，严格对称 */
   display: flex;
   flex-direction: column;
   gap: 15px;
   z-index: 10;
-  max-height: calc(100vh - 250px); /* 相应减少 max-height 防止触底 */
+  max-height: calc(100vh - 280px); /* 留出底部赛程空间 */
 }
-.left-data { left: 20px; }
-.right-data { right: 20px; }
+.left-data { left: 40px; } /* 严格贴紧左侧全局边界 */
+.right-data { right: 40px; } /* 严格贴紧右侧全局边界 */
 
 .data-card {
-  background: rgba(18, 18, 18, 0.75); /* 黑曜石底色 */
-  border-radius: 8px;
-  padding: 12px;
+  background: rgba(20, 22, 26, 0.75); /* 黑曜石底色 */
+  border-radius: 6px; /* 更加硬朗的边缘 */
+  padding: 14px; /* 紧凑内边距 */
   backdrop-filter: blur(12px);
+  position: relative;
+}
+.data-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 6px;
+  padding: 1px;
+  background: linear-gradient(180deg, rgba(210, 167, 109, 0.5) 0%, transparent 20%, transparent 80%, rgba(210, 167, 109, 0.2) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 .starting-xi {
@@ -636,37 +787,38 @@ onMounted(async () => {
 .player-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px dashed rgba(210, 167, 109, 0.15);
+  gap: 10px;
+  padding: 6px 0; /* 极致紧凑 */
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.05); /* 弱虚线 */
 }
 .player-item:last-child {
   border-bottom: none;
   padding-bottom: 0;
 }
 .p-pos {
-  font-size: 0.75rem;
-  padding: 3px 6px;
+  font-size: 0.7rem;
+  padding: 2px 6px;
   border-radius: 4px;
-  min-width: 35px;
+  min-width: 32px;
   text-align: center;
   font-weight: bold;
 }
-.pos-gk { color: #A0A0A0; border: 1px solid #A0A0A0; background: rgba(160, 160, 160, 0.1); } 
-.pos-df { color: #D2A76D; border: 1px solid #D2A76D; background: rgba(210, 167, 109, 0.1); } 
-.pos-mf { color: #D2A76D; border: 1px solid #D2A76D; background: rgba(210, 167, 109, 0.1); } 
-.pos-fw { color: #D2A76D; border: 1px solid #D2A76D; background: rgba(210, 167, 109, 0.1); }
+.pos-gk { color: #888; background: rgba(136, 136, 136, 0.1); } 
+.pos-df { color: #A67C41; background: rgba(166, 124, 65, 0.1); } 
+.pos-mf { color: #D2A76D; background: rgba(210, 167, 109, 0.1); } 
+.pos-fw { color: #E8C388; background: rgba(232, 195, 136, 0.1); }
 
 .p-info {
   display: flex;
   flex-direction: column;
+  flex: 1;
   min-width: 0; /* 防止文本溢出 */
   line-height: 1.2;
 }
 .p-name {
-  font-size: 1rem;
+  font-size: 0.9rem; /* 缩小一点，提升密度 */
   font-weight: bold;
-  color: #FFFFFF;
+  color: #E6E6E6;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -911,56 +1063,157 @@ onMounted(async () => {
 
 /* ================= 底部赛程滑动区 ================= */
 .schedule-section {
-  flex: 0 0 auto; 
-  padding: 5px 30px 10px;
-  background: linear-gradient(to top, rgba(18,18,18,0.9) 0%, rgba(18,18,18,0.4) 50%, transparent 100%);
+  position: absolute;
+  bottom: 20px;
+  left: 40px; /* 对齐外层 padding */
+  right: 40px;
+  padding: 0;
   z-index: 10;
   pointer-events: auto; 
 }
 
 .section-title {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 800;
   color: #A0A0A0;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
 }
 .bracket { color: #D2A76D; }
 
+.schedule-container {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+}
+
 .match-grid {
   display: flex;
-  gap: 15px;
+  flex: 1;
+  gap: 12px;
   overflow-x: auto;
   padding-bottom: 5px;
-  scrollbar-width: thin;
-  scrollbar-color: #D2A76D transparent;
+  scrollbar-width: none; /* Hide scrollbar for cleaner look */
+}
+
+
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.history-card {
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid rgba(210, 167, 109, 0.2);
+  transition: all 0.3s;
+  background: rgba(20, 22, 26, 0.6);
+}
+
+.history-card:hover {
+  transform: translateX(5px);
+  border-color: rgba(210, 167, 109, 0.6);
+  background: rgba(30, 32, 38, 0.85);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.empty-history {
+  text-align: center;
+  color: #777;
+  padding: 40px 0;
+}
+
+:deep(.cyber-drawer) {
+  background: rgba(13, 17, 23, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+  border-right: 1px solid rgba(210, 167, 109, 0.3) !important;
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.8) !important;
+}
+
+:deep(.cyber-drawer .el-drawer__header) {
+  color: #D2A76D !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(210, 167, 109, 0.2) !important;
+  margin-bottom: 0 !important;
+  padding: 20px !important;
+}
+
+:deep(.cyber-drawer .el-drawer__body) {
+  padding: 0 !important;
+}
+
+:deep(.cyber-drawer .el-drawer__close-btn) {
+  color: #D2A76D !important;
 }
 .match-grid::-webkit-scrollbar {
-  height: 4px;
-}
-.match-grid::-webkit-scrollbar-thumb {
-  background: #D2A76D;
-  border-radius: 4px;
+  display: none; /* Hide scrollbar for cleaner look */
 }
 
 .grid-card {
-  flex: 0 0 200px;
-  height: 90px;
-  background: rgba(30, 26, 23, 0.6);
-  padding: 8px 10px;
+  flex: 0 0 160px; /* 更短、更紧凑的卡片 */
+  height: auto;
+  min-height: 80px;
+  background: rgba(20, 22, 26, 0.75);
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   transition: all 0.3s ease;
-  backdrop-filter: blur(5px);
-  border-radius: 6px; /* Added border-radius so edge glow looks good */
+  backdrop-filter: blur(12px);
+  border-radius: 6px; 
+  position: relative;
+}
+
+.grid-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 6px;
+  padding: 1px;
+  background: linear-gradient(180deg, rgba(210, 167, 109, 0.4) 0%, transparent 40%, transparent 60%, rgba(210, 167, 109, 0.1) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.ended-match {
+  opacity: 0.5;
+  filter: grayscale(80%);
+}
+
+.ended-match .card-teams {
+  color: #777;
+}
+
+.ended-match:hover {
+  opacity: 0.8;
+  filter: grayscale(50%);
 }
 
 .grid-card:hover {
+  transform: translateY(-3px);
+  background: rgba(30, 32, 38, 0.85);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.active-match {
+  background: rgba(30, 32, 38, 0.95);
   transform: translateY(-5px);
-  background: rgba(45, 38, 30, 0.8);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.8), inset 4px 0 10px rgba(210, 167, 109, 0.5), inset 2px 2px 15px rgba(255, 193, 7, 0.05), inset -2px -2px 15px rgba(255, 193, 7, 0.05) !important;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+.active-match::before {
+  background: linear-gradient(180deg, #D2A76D 0%, transparent 40%, transparent 60%, rgba(210, 167, 109, 0.5) 100%);
+  padding: 2px;
 }
 
 .card-header {
@@ -987,5 +1240,27 @@ onMounted(async () => {
   font-size: 0.65rem;
   color: #6e7681;
   text-align: center;
+}
+
+.glass-panel {
+  background: rgba(20, 22, 26, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6); /* 底部接地阴影 */
+  border: none;
+}
+
+.glass-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 6px;
+  padding: 1px; /* 极细边框宽度 */
+  background: linear-gradient(180deg, rgba(210, 167, 109, 0.6) 0%, rgba(210, 167, 109, 0) 25%, rgba(210, 167, 109, 0) 75%, rgba(146, 122, 89, 0.4) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 </style>
